@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Palindrome</title>
+    <script type="text/javascript">
+    	function check() {
+      		res="Entered String is palindrome";
+        	var str=document.getElementById("str").value;
+        	var i=0;
+        	var j=str.length-1;
+        	for(; i < j ; i++ , j--)
+          		if(str[i]!=str[j]){
+            			res="Entered String is not palindrome";
+            			break;
+          		}
+        		document.getElementById("res").innerHTML=res;
+      		}
+    </script>
+  </head>
+  <body style="background-color:silver; font-family:courier; text-align:center">
+    <h1 style=>checking palindrome</h1>
+    <br>
+    <input type="text" name="string" placeholder="enter text here" id="str">
+    <br><br>
+    <button type="button" onclick="check()">check</button>
+    <p id="res"></p>
+  </body>
+</html>
