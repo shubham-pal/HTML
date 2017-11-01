@@ -1,0 +1,19 @@
+<html>
+	<head><title>Set Interval</title></head>
+	<body>
+		<input type="button" value="Image Shift" onclick="move()">
+		<p id="photo"> <img src="ImageName.jpg"></p>
+		<script>
+			function move() {
+				var mov=0;
+				setInterval(	function() {
+							            mov++;
+							            document.getElementById("photo").style.marginLeft=mov;
+						          }
+					,10)
+			}
+			//Image Should be in Same Directory
+      
+		</script>
+	</body>
+</html>
