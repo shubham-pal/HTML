@@ -1,0 +1,26 @@
+<html>
+	<head> <title>Stack</title> <center><h2>Stack Implementation</h2></center></head>
+	<body>
+
+		<input type="button" value="push" onclick="pushStack()"><br><br>
+		<input type="button" value="pop" onclick="popStack()">
+		<script>
+			var tos=-1;
+			var array=[];
+			function pushStack() {
+				tos++;
+				array[tos]=parseInt(prompt("Enter element to push : "));
+				alert("Pushed Element : " + array[tos] ); 
+			}
+			function popStack() {
+				if(tos!=-1) {
+					alert("poped Element : " + array[tos] );
+					tos--;
+				}
+				else { 
+					alert("Stack is Already Empty");
+				}
+			}
+		</script>
+	</body>
+</html>
