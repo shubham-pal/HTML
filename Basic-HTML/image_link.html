@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Image Hyperlink
+		</title>
+	</head>
+	<body>
+		<p>Click following link</p>
+		<a href="http://www.Facebook.com" target="_self">
+		<img src="me.jpg" width=300 height=200 alt="Me" border="0"/>
+		</a>
+
+		<p>Click following link</p>
+		<a href="/cgi-bin/ismap.cgi" target="_self">
+		<img ismap src="me.jpg" width=300 height=200 alt="Me" border="0"/>
+		</a>
+
+		<p>Search and click the hotspot</p>
+		<img src="me.jpg" width=300 height=200 alt="Me" border="0" usemap="#html"/>
+		<!-- Create Mappings -->
+		<map name="html">
+		<area shape="circle" coords="80,80,20" href="http://www.Facebook.com" alt="News Feed" target="_self" />
+		<area shape="rect" coords="5,5,40,40" alt="Profile" href="http://www.Facebook.com/MohdSHoaibRayeen" target="_self"/>
+
+	</body>
+</html>
