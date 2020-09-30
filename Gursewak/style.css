@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+}
+
+.grid>div{
+  padding: 1rem;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 1rem;
+}
+
+.grid .heading{
+  color: #666666;
+  font-size: 1.2rem;
+}
+
+.icon{
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.green{
+  color: rgb(7, 97, 7);
+}
+
+.red{
+  color: rgb(201, 11, 11);
+}
