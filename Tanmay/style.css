@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(250, 250, 250);
+}
+.table{
+    width:100%;
+    box-shadow:0 3px 10px lightgrey;
+}
+
+/* Header */
+.table .header{
+    display: flex;
+    padding: 20px 0px;
+    color: grey;
+    background-color: white;
+    border-bottom:1px solid lightgray;
+}
+
+.header-col{
+    width: 20%;
+    text-align: center;
+}
+
+/* Body */
+.row{
+    display: flex;
+    padding: 20px 0px;
+    margin: 0px 0px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.body-col{
+    width: 20%;
+    text-align: center;
+}
+
+.body-col a{
+    color: red;
+    font-size: 18px;
+}
+.body-col a:first-of-type{
+    margin: 20px 15px;
+    color: darkblue;
+}
